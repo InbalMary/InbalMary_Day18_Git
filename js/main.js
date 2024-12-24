@@ -6,8 +6,11 @@ var gOrig2Color = 'purple'
 
 var gHoverTimeout
 var gEnterCounter = 0
+var gAllMovesCout = 0
 
 function onBallClick(elBall, maxDiameter) {
+    gAllMovesCout++
+    updateCounter()
     var color = getRandomColor()
     gSize += getRandomIntInclusive(20, 60)
 
@@ -22,6 +25,8 @@ function onBallClick(elBall, maxDiameter) {
 }
 
 function onBall3Click() {
+    gAllMovesCout++
+    updateCounter()
     var elBall1 = document.querySelector('.ball1')
     var elBall2 = document.querySelector('.ball2')
 
@@ -44,6 +49,8 @@ function onBall3Click() {
 }
 
 function onBall4Click() {
+    gAllMovesCout++
+    updateCounter()
     var rand = getRandomIntInclusive(20, 60)
 
     var elBall1 = document.querySelector('.ball1')
@@ -70,11 +77,15 @@ function onBall4Click() {
 }
 
 function onBall5Click() {
+    gAllMovesCout++
+    updateCounter()
     var elBody = document.querySelector('body')
     elBody.style.backgroundColor = getRandomColor()
 }
 
 function onBall6Click() {
+    gAllMovesCout++
+    updateCounter()
     var elBall1 = document.querySelector('.ball1')
     var elBall2 = document.querySelector('.ball2')
 
@@ -98,6 +109,8 @@ function onBall6Click() {
 }
 
 function onMouseenter() {
+    gAllMovesCout++
+    updateCounter()
     gEnterCounter++
     gHoverTimeout = setTimeout(() => {
         onBall6Click()
@@ -112,4 +125,9 @@ function onMouseenter() {
 
 function onMouseleave() {
     clearInterval(gHoverTimeout)
+}
+
+function updateCounter(){
+    var elCounter = document.querySelector('span')
+    elCounter.innerText = gAllMovesCout
 }
