@@ -25,7 +25,7 @@ h1 {
     transition: 1s;
 }
 
-.ball1{
+.ball1 {
     background-color: aquamarine;
 }
 
@@ -33,10 +33,14 @@ h1 {
     background-color: purple;
 }
 
-.ball3{
+.ball3 {
     background-color: sandybrown;
 }
 
-.ball4{
+.ball4 {
     background-color: darkblue;
+}
+
+.ball5 {
+    background-color: palevioletred;
 }

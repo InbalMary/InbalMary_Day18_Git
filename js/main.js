@@ -63,3 +63,8 @@ function onBall4Click() {
         elBall2.innerText = size2 - rand
     }
 }
+
+function onBall5Click(){
+    var elBody = document.querySelector('body')
+    elBody.style.backgroundColor = getRandomColor()
+}
