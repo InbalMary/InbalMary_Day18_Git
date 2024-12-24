@@ -11,10 +11,16 @@ h1 {
 }
 
 .ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: aquamarine;
     margin: auto;
     text-align: center;
+    font-size: 22px;
+    font-weight: bold;
 }
