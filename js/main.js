@@ -32,6 +32,34 @@ function onBall3Click() {
 
     elBall1.style.height = size2
     elBall1.style.width = size2
+    elBall1.innerText = size2
     elBall2.style.height = size1
     elBall2.style.width = size1
+    elBall2.innerText = size1
+}
+
+function onBall4Click() {
+    var rand = getRandomIntInclusive(20, 60)
+
+    var elBall1 = document.querySelector('.ball1')
+    var elBall2 = document.querySelector('.ball2')
+
+    var size1 = parseFloat(elBall1.style.height)
+    var size2 = parseFloat(elBall2.style.height)
+
+    if (size1 - rand < 100){
+    } 
+    else {
+        elBall1.style.height = size1 - rand + 'px'
+        elBall1.style.width = size1 - rand + 'px'
+        elBall1.innerText = size1 - rand
+    }
+
+    if (size2 - rand < 100){
+    } 
+    else {
+        elBall2.style.height = size2 - rand + 'px'
+        elBall2.style.width = size2 - rand + 'px'
+        elBall2.innerText = size2 - rand
+    }
 }
