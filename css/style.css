@@ -25,3 +25,19 @@ h1 {
     font-weight: bold;
     transition: 1s;
 }
+
+.ball2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: purple;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 1s;
+}
