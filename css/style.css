@@ -18,7 +18,6 @@ h1 {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: aquamarine;
     margin: auto;
     text-align: center;
     font-size: 22px;
@@ -26,18 +25,14 @@ h1 {
     transition: 1s;
 }
 
-.ball2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ball1{
+    background-color: aquamarine;
+}
 
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+.ball2 {
     background-color: purple;
-    margin: auto;
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    transition: 1s;
+}
+
+.ball3{
+    background-color: sandybrown;
 }
